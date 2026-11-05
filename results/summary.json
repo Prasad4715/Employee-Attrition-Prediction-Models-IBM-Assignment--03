@@ -1,0 +1,60 @@
+{
+  "data_source": "synthetic stand-in (IBM schema)",
+  "n_rows": 1470,
+  "n_features": 30,
+  "attrition_rate": 0.15714285714285714,
+  "xgboost_real": false,
+  "best_model": "Logistic Regression",
+  "best_params": {
+    "Logistic Regression": {
+      "penalty": "l2",
+      "C": 0.23357214690901212
+    },
+    "Decision Tree": {
+      "min_samples_leaf": 40,
+      "max_depth": 4,
+      "criterion": "entropy"
+    },
+    "Random Forest": {
+      "n_estimators": 200,
+      "min_samples_leaf": 10,
+      "max_features": "sqrt",
+      "max_depth": 6
+    },
+    "XGBoost (fallback: sklearn HistGradientBoosting)": {
+      "min_samples_leaf": 20,
+      "max_iter": 100,
+      "max_depth": 2,
+      "learning_rate": 0.05,
+      "l2_regularization": 1.0
+    }
+  },
+  "overtime_attrition_pct": {
+    "No": 10.5,
+    "Yes": 29.4
+  },
+  "top_features": {
+    "MonthlyIncome": 0.1543,
+    "OverTime": 0.0566,
+    "JobSatisfaction": 0.0198,
+    "YearsWithCurrManager": 0.0185,
+    "Age": 0.0163,
+    "StockOptionLevel": 0.012,
+    "MaritalStatus": 0.0084,
+    "NumCompaniesWorked": 0.0039
+  },
+  "top_lr_positive": {
+    "cat__OverTime_Yes": 0.821,
+    "cat__BusinessTravel_Travel_Frequently": 0.686,
+    "cat__MaritalStatus_Single": 0.662,
+    "cat__JobRole_Sales Representative": 0.492,
+    "cat__EducationField_Other": 0.446
+  },
+  "top_lr_negative": {
+    "num__MonthlyIncome": -1.253,
+    "cat__OverTime_No": -0.826,
+    "cat__BusinessTravel_Non-Travel": -0.725,
+    "cat__EducationField_Technical Degree": -0.481,
+    "cat__MaritalStatus_Divorced": -0.415
+  }
+}

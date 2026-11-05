@@ -1,0 +1,5 @@
+,Accuracy,Precision,Recall,F1,ROC-AUC,CV ROC-AUC (best)
+Logistic Regression,0.745,0.325,0.587,0.419,0.776,0.817
+Decision Tree,0.684,0.272,0.609,0.376,0.688,0.724
+Random Forest,0.786,0.369,0.522,0.432,0.764,0.795
+XGBoost (fallback: sklearn HistGradientBoosting),0.748,0.325,0.565,0.413,0.754,0.804
